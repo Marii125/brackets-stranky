@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*první část*/
+
+.row {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+#logo img {
+    display: block;
+    width: 20%;
+    position: relative;
+    top: 10px; /*proc nefunguje kdyz dam 10%???????????*/
+    
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 16px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+     border-bottom: 2px solid transparent; /*musime sem dat taky border a nakonci transparent kvuli tomu aby nez to dole da nakou barvu tak aby to bylo pruhledne*/
+
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    transition: border-bottom 1.5s ;
+    border-bottom: 2px solid #4b253e;/*musime dat do toho vychoziho link,visited taky ten border-bottom ale musime tam dat transparent; */
+    
+}
+
+/*budeme floatovat ten cely blok ul
+kdyby jsme dali floutovat nav ul li tak se to poradi prehazi */
+nav ul {
+    float: right;
+    margin-top: -123px;
+}
+
+.clear-float {
+    clear: both; 
+}
+
+/*druhá část
+pozadí fotky header*/
+header {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/food.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.header-text h1 {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2.3px;
+    word-spacing: 1.2px;
+     
+}
+
+
+.btn {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    border: 1px solid #ba4192;
+    border-radius: 24%;
+    padding: 7px 9px;
+    margin-top: 6px;
+    letter-spacing: 1px;
+}
+
+
+/*hover se vzdy poji s active, a link s visited a to link je jakoby to vychazi a kdyz proste davame hover tak pridavame i to link s tim visited*/
+.btn-first:link,
+.btn-first:visited {
+    background: #4b253e;
+}
+
+.btn-first:hover,
+.btn-first:active {
+    transition: background 1s; /* thle rika at se to pozadi zmeni za 1.5s*/
+    background: #71385d;
+}
+
+/*treba tady by stacilo dat jen .btn-second > margin-left: 10px; ale mame tam hover podtim tak to prepiseme nahore misto jen .btn-second na to link a visited*/
+.btn-second:link,
+.btn-second:visited {
+    margin-left: 10px;
+}
+
+.btn-second:hover,
+.btn-second:active {
+    transition: background 1s;
+    background: #71385d;
+}
+
+
+
+/*MAIN . SECTION*/
+
+.heading-main h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.heading-main h2:after {
+    content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 2px solid #4b253e;
+    margin: 15px auto
+    
+}
+

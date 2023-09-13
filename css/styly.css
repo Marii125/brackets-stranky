@@ -26,7 +26,7 @@
 nav ul li {
     display: inline-block;
     margin-left: 15px;
-    margin-top: 16px;
+    margin-top: 15px;
 }
 
 nav ul li a:link,
@@ -49,7 +49,14 @@ nav ul li a:active {
 kdyby jsme dali floutovat nav ul li tak se to poradi prehazi */
 nav ul {
     float: right;
-    margin-top: -123px;
+   margin-top: -195px;
+   
+/* tohle jsme sem pridali aby s nama jezdila ta navigace a dali jsme tomu
+    margin left protoze to zajelo do toho obrazku*/
+    position: fixed;
+    margin-left: 35%;
+    z-index: 100; /* tohle znamena aby byla ta navigace nad a aby se to neschovalo pod necim treba pod obrazky kdyz ta nagivace jezdi s nama po strance a
+    VETSINOU TO ZACINA NA 100 A PAK NEKDE JINDE MUZEME POUZIT ABY TO BYLO NAD 100 TREBA 200 A POTOM ZASE 300,400 ATD*/
 }
 
 .clearfix {
@@ -64,9 +71,20 @@ header {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/food.jpg");
     background-size: cover;
     height: 100vh;
-    background-attachment: fixed; /*pozadi obrazku jakoby jezdi s nama ale ne po cely strance!!!!!!**/
+    background-attachment: fixed; /*pozadi obrazku jakoby jezdi s nama ale ne po cely strance jen v pozadi toho obrazku!!!!!!**/
 }
 
+/*TED JSEM PRIDAME NAV-BACKGROUND aby s nama jezdila navigace s POZADIM*/
+
+.nav-background {
+    position: fixed;
+    width: 100%;
+    height: 40px; 
+    background-color: rgba(0,0,0,0.7);
+    z-index: 50; /*sem davame z-index: 50, protoze je podrazeny navigaci a chceme aby
+    ta navigace sedela jakoby na tom pozadi*/
+    border-bottom: 2px solid #fff;
+}
 .header-text {
     position: absolute;
     top: 50%;
@@ -125,9 +143,13 @@ header {
 
 /**************MAIN . SECTION*********/
 
+/*sem dame prazdne misto jakoby pred nadpisy*/
+.empty-space {
+    height: 50px;
+}
 .heading-main h2 {
     text-align: center;
-    margin-top: 20px;
+/*    margin-top: 50px;*/
 }
 
 .heading-main h2::after {

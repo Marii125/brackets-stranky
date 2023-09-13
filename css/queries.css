@@ -1,0 +1,133 @@
+/*alt se udela tak ze stiskneme levy alt (plus) 64*/
+
+@media only screen and (max-width: 1180px) {
+/***** REFERENCE***** */
+    .col.span-1-of-3.one-reference {
+        width: 49%;
+        margin-left: 10px;
+        
+  }
+
+  
+    .one-reference:nth-child(3) {
+        display: none;
+    }
+/* toto skryje tu treti referenci*/
+
+/* fotky-relaxu*****/
+
+    .fotky-relaxu img {
+        margin-left: 10px;
+/*        margin-right: 10px;*/
+    }
+
+    .fotky-relaxu .span-1-of-2 {
+        width: 47.5%;
+    }
+
+/* HEADER*/
+    .header-text {
+        width: 100%;
+        left: 0%;
+        transform: translate(0%, 0%);
+    }
+    
+    .header-text h1 {
+        text-align: center;
+    }
+
+    .btn {
+        display: block;
+        text-align: center;
+
+    }
+    
+    
+    .btn-first {
+        margin-left: 10px;
+    }
+
+    .btn-second:link,
+    .btn-second:visited {
+        margin-left: 10px;
+}
+
+
+    
+}
+@media only screen and (max-width: 1140px) {
+    .row {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1015px) {
+/* reference*****   */
+    .col.span-1-of-3.one-reference {
+        width: 93%;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    
+}
+ 
+@media only screen and (max-width: 1005px) {
+/* RELAX-INFO */
+    .relax-info .span-1-of-2 {
+        width: 96%;
+    }
+
+
+    .relax-info img {
+/*        margin-right: 10px;*/
+        margin-left: 10px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    #logo {
+        display: none;
+    }
+    nav ul {
+        margin-top:0px;
+        text-align:center;
+        float:none;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+/****PHOTO-GALLERY*****/
+    .photo-segment li {
+        width: 96%;
+}      
+    
+    
+    .photo-segment .col {
+           margin-left: 0;
+       }
+
+
+    .photo-segment {
+/*
+        margin-left: 10px;
+        margin-right: 10px;
+*/
+}
+
+/*fotky-relaxu*/
+
+    .fotky-relaxu .span-1-of-2 {
+        width: 96%;
+    
+}
+
+    .fotky-relaxu .col {
+        margin-left: 0px;
+}
+    
+    .fotky-relaxu img {
+
+        margin-left: 10px;
+/*        margin-right: 10px;*/
+
+    }
+} 

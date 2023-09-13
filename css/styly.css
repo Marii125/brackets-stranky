@@ -9,8 +9,6 @@
 *************************************
 **************************************/
 
-
-@media(min-width: 1140px){
    .row {
     width: 1140px;
     margin: 0 auto;
@@ -54,7 +52,7 @@ nav ul {
     margin-top: -123px;
 }
 
-.clear-float {
+.clearfix {
     clear: both; 
 }
 
@@ -63,9 +61,10 @@ pozadí fotky header************************
 ******************************************
 *******************************************/
 header {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/food.jpg");
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/food.jpg");
     background-size: cover;
     height: 100vh;
+    background-attachment: fixed; /*pozadi obrazku jakoby jezdi s nama ale ne po cely strance!!!!!!**/
 }
 
 .header-text {
@@ -124,7 +123,7 @@ header {
 
 
 
-/*MAIN . SECTION*/
+/**************MAIN . SECTION*********/
 
 .heading-main h2 {
     text-align: center;
@@ -166,7 +165,7 @@ header {
     float: left;
 }
 .text-o-relaxu p {
-    margin-left: 50px;
+    margin-left: 60px;
     
 }
 
@@ -184,10 +183,11 @@ header {
 }
 
 
-/*dalsi section -refernces*/
+/********dalsi section -refernces**********/
 .reference {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-        url(images/nymph-3388708_640.jpg);
+        url(../images/nymph-3388708_640.jpg);
+   background-attachment: fixed;
 }
 
 .reference h2 {
@@ -241,26 +241,114 @@ header {
     
 }
 
-/*dlasi section- photo-gallery*/
+/********dlasi section- photo-gallery*********/
 
 .photo-segment li {
     list-style-type: none;
-    background-color: #000;
+/*    background-color: #000; tohle se smazalo kvuli skrytymu :hover*/
     overflow: hidden; /*a tohle to vyrizli jak jsme to priblizili tak usekne aby to nebylo videt ty prebytecny okraje*/
      height: 396px; /*tdy taky musi byt vyska stejna jako u img protoze pak tam vznikne cernej prouzek*/
 }
 .photo-segment img {
     width: 100%;
     height: 396px;
-    opacity: 0.5; /*tohle dava pruhlednost obrazky pak je tmavsi*/
+/*    opacity: 0.5; tohle dava pruhlednost obrazky pak je tmavsi<< tohle se smazala kvuli skrytymu :hover*/
     transform: scale(1.10); /*timhle ten obrazek priblizime*/
     
 }
 
+/*
 .photo-segment img:hover {
     transition: transform 0.5s, opacity 0.5s;
     transform: scale(1);
-    opacity: 1;
-    
+    opacity: 1; 
         
 }
+*/
+
+/*********contact-form************/
+
+.contact-form {
+    max-width: 700px;
+    text-align: center;
+}
+
+
+.contact-form input{
+    width: 50%;
+    margin: 2px;
+    padding: 0 7px;
+    border: 2px solid #9ac2ed;
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px #9ac2ed;
+    
+}
+
+.contact-form textarea{
+    width: 50%;
+    margin: 2px;
+    padding: 0 7px;
+    border: 2px solid #9ac2ed;
+    border-radius: 5%;
+    font-family: arial;
+    
+}
+
+
+input[type="submit"] {
+    width: 20%;
+}
+
+/*
+NEBO TO ZAPSAT TAKTO>>>
+.contact-form .tlacitko {
+    width: 20%;
+}
+*/
+
+
+input[type="submit"]:hover {
+    width: 20%;
+    transition: background-color 0.3s;
+    background-color: #9ac2ed;
+}
+
+/*****FOOTER******/
+
+.footer-page {
+    background: #97b0dac2;
+    margin: 10px 0px;
+}
+
+.social {
+    text-align: center;
+   margin: 10px 0px;
+}
+
+.social p {
+    display: inline;
+    margin-right: 3px;
+    
+}
+
+.social p img {
+    width: 7%;
+}
+
+.social p a:link,
+.social p a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.social p a:hover,
+.social p a:active {
+    color: black;
+}
+
+
+
+.footer-text {
+    text-align: center;
+}
+

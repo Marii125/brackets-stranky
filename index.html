@@ -4,8 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
-  <link rel="stylesheet" href="styly.css">
+ <link rel="icon" type="image/png" href="images/insta1234.png"><!--  tohle je pro ikonknku v zalozce prohlizece (doporucuje se velikost ikonky 16x16)-->
+  <link rel="stylesheet" href="css/lightbox.min.css">
+  <link rel="stylesheet" href="css/styly.css">
+  <link rel="stylesheet" href="css/queries.css">
+<!-- je lepsi mit styly.css nad queries.css kdyby nahodu   -->
   <link rel="stylesheet" href="grid.css">
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+  
+    
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!--zkopitovany kod ze stranky jQuery CDN a pak dame pod to! script a dame tam tu slozku js/sript.js    -->
+<script src="js/script.js"></script>
 </head>
 
 <body>
@@ -19,14 +29,14 @@
     </div>    
         <nav>
           <ul>
-              <li><a href="">jedna</a></li>
-              <li><a href="">dva</a></li>
-              <li><a href="">tri</a></li>
-              <li><a href="">ctyri</a></li>
-              <li><a href="">pet</a></li>
+              <li><a href="" >nas relax</a></li>
+              <li><a href="" >uvolneni</a></li>
+              <li><a href="" >reference</a></li>
+              <li><a href="" >fotogalerie</a></li>
+              <li><a href="" >kontakt</a></li>
           </ul>                  
         </nav>
-                <div class="clear-float"></div>                           
+                <div class="clearfix"></div>                           
     </div>
               
 <!--druhá část-->
@@ -147,26 +157,73 @@
         
         <div class="photos row">
             <ul class="photo-segment">
-                <li class="col span-1-of-2"><img src="images/squirrel-8219439_640.jpg" alt="prvni"></li>
-                <li class="col span-1-of-2"> <img src="images/squirrel-8219439_640.jpg" alt="prvni"></li>
+                <li class="col span-1-of-2">
+                    <a href="images/food.jpg" data-lightbox="mygallery" data-title="dobre jidlo">
+                        <img src="images/food.jpg" alt="">
+                    </a>
+                </li>
+                <li class="col span-1-of-2">
+                    <a href="images/hands-1327811_640.jpg" data-lightbox="mygallery" data-title="ruce">
+                        <img src="images/hands-1327811_640.jpg" alt="">
+                    </a>
+                </li>
             </ul>
             
              <ul class="photo-segment">
-                <li class="col span-1-of-2"><img src="images/hands-1327811_640.jpg" alt="prvni"></li>
-                <li class="col span-1-of-2"> <img src="images/hands-1327811_640.jpg" alt="prvni"></li>
+                <li class="col span-1-of-2">
+                    <a href="images/jetty.jpg" data-lightbox="mygallery">
+                        <img src="images/jetty.jpg" alt="">
+                    </a>
+                 </li>
+                <li class="col span-1-of-2">
+                    <a href="images/musi.jpg" data-lightbox="mygallery">
+                        <img src="images/musi.jpg" alt="">
+                    </a>
+                 </li>
             </ul>
             
               <ul class="photo-segment">
-                <li class="col span-1-of-2"><img src="images/jetty.jpg" alt="prvni"></li>
-                <li class="col span-1-of-2"> <img src="images/jetty.jpg" alt="prvni"></li>
+                <li class="col span-1-of-2">
+                    <a href="images/leh.jpg" data-lightbox="mygallery">
+                        <img src="images/leh.jpg" alt="">
+                    </a>
+                  </li>
+                <li class="col span-1-of-2">
+                    <a href="images/nymph-3388708_640.jpg" data-lightbox="mygallery">
+                        <img src="images/nymph-3388708_640.jpg" alt="">
+                    </a>
+                  </li>
             </ul>
         </div>
     </section>
+    
+    <section>
+     <div class="heading-main">
+        <h2> Zeptejte se nas</h2>
+     </div>
+    
+      <form class="contact-form row"> 
+        <input type="text" placeholder="jmeno"><br>
+        <input type="text" placeholder="prijmeni"><br>
+        <input type="email" placeholder="email"><br>
+        <textarea cols="30" rows="10" placeholder="text"></textarea><br>
+        <input  class="tlacitko" type="submit" value="odeslat">
+      </form>  
+    </section>
 </main>
     
-    <footer>
-    
-    
+    <footer class="footer-page">
+        <div class="row">
+            <div class="social">
+                <p><a href="https://www.instagram.com/" target="_blank"><img src="images/insta1.jpg" alt="obrazek odkaz instagram"></a></p>
+                <p><a href=".com/search?q=facebook&oq=facebook">facebook</a></p>
+            </div>
+            
+            <div class="footer-text">
+                copyride &copy; 2023. Vsechna prava vyhrazena.
+            </div>
+        
+        </div>
     </footer>
     
     
